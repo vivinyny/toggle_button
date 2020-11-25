@@ -4,9 +4,9 @@
 
 <script>
 
-import ToggleButton from './components/ToggleButton.vue':
+import ToggleButton from './components/ToggleButton.vue'
 
-export default: {
+export default {
     components: {
         ToggleButton
     },
