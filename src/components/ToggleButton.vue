@@ -20,7 +20,7 @@ export default {
         },
         checkedValue: {
             get() {
-                return.this.currentState
+                return this.currentState
             },
             set(newValue) {
                 this.currentState = newValue;
