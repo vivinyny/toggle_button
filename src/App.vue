@@ -1,8 +1,6 @@
 <template>
     <section id="app">
-        <!-- <div :class="{'active' : toggleActive}" class="toggle_container" > -->
             <ToggleButton/>
-        <!-- </div> -->
     </section>
 </template>
 
@@ -16,7 +14,7 @@ export default {
     components: {
         ToggleButton
     },
-};
+}
 </script>
 
 
@@ -28,10 +26,5 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
-}
-
-.box {
-    text-align:center;
-    margin-bottom: 30px;
 }
 </style>
