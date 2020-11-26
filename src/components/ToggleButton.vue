@@ -1,5 +1,10 @@
 <template>
-    <div :class="currentState ? 'toggle_green' : 'toggle_orange' " @click="currentState = !currentState">
+    <div 
+        :class="currentState ? 'toggle_green' : 'toggle_orange' " 
+        @click="currentState = !currentState"
+    >
+        <label v-if="currentState" >On</label>
+        <label v-if="!currentState">Off</label>
     </div>
 </template>
 
