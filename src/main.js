@@ -6,7 +6,7 @@ import ToggleButton from './components/ToggleButton.vue'
 
 const app = createApp(App)
 
-app.use(store);
+app.use(router);
 
 app.component('toggle-button', ToggleButton);
 
