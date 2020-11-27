@@ -1,31 +1,27 @@
 <template>
     <div 
-        :class="currentState ? 'toggle_green' : 'toggle_orange' " 
-        @click="currentState = !currentState"
+        :class="isOn ? 'toggle_green' : 'toggle_orange' " 
+        @click="changeColor"
     >
         <label v-if="isOn" >On</label>
         <label v-if="!isOn">Off</label>
-        <p>hello word</p>
     </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            currentState: false
-        }
-    },
     computed: {
-        idOn() {
-            return this.$store.getters['toggleSwitch'];
+        isOn() {
+            const toggle = this.$store.getters['toggle/toggleOn'];
+            console.log('state' ,toggle);
+            return toggle;
         }
     },
-    // methods: {
-    //     changeColor {
-
-    //     }
-    // }
+    methods: {
+        changeColor() {
+            this.$store.dispatch('toggle/toggleSwitch')
+        }
+    }
 };
 </script>
 

@@ -1,15 +1,10 @@
-import mutations from './mutations.js';
-import actions from './actions.js';
-import getters from './getters.js';
+import { createStore } from 'vuex'
+import toggleModule from './modules/toggle/index.js'
 
-export default {
-    namespaced: true,
-    state() {
-        return {
-            toggleOn: false,
-        }
-    },
-    mutations,
-    actions,
-    getters
-};
+const store = createStore({
+    modules: {
+        toggle: toggleModule
+    }
+});
+
+export default store

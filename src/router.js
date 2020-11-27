@@ -5,7 +5,7 @@ import Toggle from './pages/Toggle.vue';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/', components: Toggle },
+        { path: '/', component: Toggle },
     ]
 });
 

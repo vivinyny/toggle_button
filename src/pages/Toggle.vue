@@ -1,5 +1,5 @@
 <template>
-        <toggle-button></toggle-button>
+    <ToggleButton/>
 </template>
 
 <script>
