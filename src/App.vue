@@ -1,19 +1,12 @@
 <template>
     <section id="app">
-            <ToggleButton/>
+        <router-view></router-view>
     </section>
 </template>
 
 <script>
-
-import ToggleButton from './components/ToggleButton.vue'
-
 export default {
     name: 'App',
-
-    components: {
-        ToggleButton
-    },
 }
 </script>
 
